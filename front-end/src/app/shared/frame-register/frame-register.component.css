@@ -1,0 +1,25 @@
+.navbar .logo {
+  height: 2rem;
+  justify-content: center;
+  font-size: 1.5rem;
+  font-style: oblique;
+  font-weight: bold;
+  color: white;
+}
+
+.navbar .login{
+  display: flex;
+  font-size: 1rem;
+  font-style: oblique;
+  font-weight: bold;
+  padding-left: 10px;
+  padding-top: 3px;
+  color: white;
+}
+
+.footer {
+  color: rgb(0, 0, 0);
+  font-style: oblique;
+  font-weight: bold;
+  font-size: 15px;
+}

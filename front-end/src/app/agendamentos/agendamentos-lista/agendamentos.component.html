@@ -1,0 +1,53 @@
+<div class="card mt-3">
+  <div class="card-header">
+    <div class="float-left">
+      <h4>Agendamentos</h4>
+    </div>
+    <div class="float-right">
+      <button type="button" class="btn btn-primary" [routerLink]="['/novo']" routerLinkActive="active">Novo</button>
+      <button type="button" class="btn btn-secondary" [routerLink]="['/editar']" routerLinkActive="active">Atualizar</button>
+    </div>
+  </div>
+  <div class="card-body">
+    <table class="table table-hover" *ngIf="(agendamentos$ | async) as agendamentos; else loading">
+      <thead>
+        <tr>
+          <th>#</th>
+          <th>Agendamentos</th>
+          <th></th>
+        </tr>
+      </thead>
+        <tbody>
+          <tr *ngFor="let agendamento of agendamentos">
+            <td>{{ agendamento.id }}</td>
+            <td>{{ agendamento.data }}</td>
+            <td>{{ agendamento.cliente }}</td>
+            <td>
+              <span class="float-right">
+                <button class="btn-btn-outline-warning mb-1 btn-sm" (click)="onEdit(agendamento.id)">
+                  Atualizar
+                </button>
+
+                <button class="btn btn-outline-danger mb-1 btn-sm" (click)="onDelete(agendamento)">
+                  Remover
+                </button>
+              </span>
+            </td>
+          </tr>
+        </tbody>
+    </table>
+
+    <ng-template #loading>
+      <span>Carregamento de Agendamentos...</span>
+    </ng-template>
+
+  </div>
+</div>
+
+<ng-template #deleteModal>
+  <div>
+    <p>Tem certeza que deseja remover esse curso?</p>
+    <button type="button" class="btn btn-default" (click)="onConfirmDelete()">Sim</button>
+    <button type="button" class="btn btn-primary" (click)="onDeclineDelete()">Não</button>
+  </div>
+</ng-template>x

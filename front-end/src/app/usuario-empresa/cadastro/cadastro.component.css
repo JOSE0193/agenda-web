@@ -1,0 +1,15 @@
+
+.card {
+  padding: 2rem;
+  margin: 5rem;
+}
+
+.card .button1 {
+  padding-right: 2rem;
+  padding-left: 4rem;
+
+}
+.card .button2 {
+  padding-right: 2rem;
+  padding-left: 3rem;
+}

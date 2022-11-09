@@ -1,0 +1,49 @@
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav"
+      aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="logo">
+      <img class="logo" src="/assets/img/agenda1.svg" alt="icone-agenda"/>
+      <a class="text" [routerLink]="['/']" routerLinkActive="router-link-active" >
+        Agenda
+      </a>
+
+    </div>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav text">
+        <li class="nav-item">
+          <a class="nav-link" routerLinkActive="active" [routerLink]="['/']">
+            <img class="avatar align-center" src="./assets/icones/house.svg" alt="avatar-usuario">
+            Ínicio
+            <span class="sr-only">(current)</span>
+          </a>
+        </li>
+        <li class="nav-item active">
+          <a class="nav-link text" routerLinkActive="active" [routerLink]="['/login/cadastro']">
+            <img class="avatar align-center" src="./assets/icones/person-lines.svg" alt="avatar-home">
+            Cadastrar
+          </a>
+        </li>
+      </ul>
+    </div>
+
+  <nav>
+    <a class="login" routerLinkActive="active" [routerLink]="['/login']">
+      <img class="avatar align-center" src="./assets/icones/person-circle.svg" alt="avatar-usuario">
+      <a class="login">
+        Entrar
+      </a>
+    </a>
+  </nav>
+</nav>
+
+<router-outlet></router-outlet>
+
+<nav class="footer navbar fixed-bottom navbar-light bg-secondary">
+  <span class="navbar-text-dark">
+    Produzido por Lima Consultoria
+  </span>
+</nav>
+
+

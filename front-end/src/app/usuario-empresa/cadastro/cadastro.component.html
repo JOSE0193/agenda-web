@@ -1,0 +1,41 @@
+<form class="register card needs-validation" novalidate [formGroup]="formulario" (ngSubmit)="onSubmit()">
+  <div class="form-group" [ngClass]="aplicaCssErro('nome')">
+    <label class="control-label" for="nome">Nome</label>
+    <input type="name" class="form-control" id="nome" name="nome"
+    aria-describedby="emailHelp" placeholder="Nome Completo">
+    <app-erro-msg [control]="$any(formulario).get('nome')" label="Nome"></app-erro-msg>
+  </div>
+  <div class="form-group" [ngClass]="aplicaCssErro('cnpj')">
+    <label class="control-label" for="cnpj">CNPJ</label>
+    <input type="cnpj" class="form-control" id="cnpj" name="cnpj"
+      aria-describedby="emailHelp" placeholder="CNPJ">
+      <app-erro-msg [control]="$any(formulario).get('cnpj')" label="CNPJ"></app-erro-msg>
+  </div>
+  <div class="form-group" [ngClass]="aplicaCssErro('email')">
+    <label class="control-label" for="email">Email</label>
+    <input type="email" class="form-control" id="email" name="email"
+      aria-describedby="emailHelp" placeholder="Email">
+      <app-erro-msg [control]="$any(formulario).get('email')" label="Email"></app-erro-msg>
+  </div>
+  <div class="form-group" [ngClass]="aplicaCssErro('senha')">
+    <label class="control-label" for="password">Senha</label>
+    <input type="password" class="form-control" id="password" placeholder="Senha"
+      name="senha">
+      <app-erro-msg [control]="$any(formulario).get('senha')" label="Senha"></app-erro-msg>
+  </div>
+  <div class="form-group" [ngClass]="aplicaCssErro('confirmarSenha')">
+    <label class="control-label" for="confirmarSenha">Confirmar Senha</label>
+    <input type="password" class="form-control" id="confimarSenha" placeholder="Confirmar Senha"
+      name="confimarSenha">
+      <app-erro-msg [control]="$any(formulario).get('confirmarSenha')" label="ConfirmarSenha"></app-erro-msg>
+  </div>
+  <span class="button card-body">
+    <span class="button1">
+      <button type="submit" class="btn btn-primary btn-lg" (click)="register()">Salvar</button>
+    </span>
+    <span class="button2">
+      <button type="submit" class="btn btn-primary btn-lg" (click)="onCancel()">Cancelar</button>
+    </span>
+   </span>
+</form>
+<router-outlet></router-outlet>

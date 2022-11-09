@@ -1,0 +1,32 @@
+<form class="needs-validation" novalidate [formGroup]="formulario" (ngSubmit)="onSubmit()">
+  <div class="form-row" [ngClass]="aplicaCssErro('nome')">
+    <div class="col-sm-12">
+      <label for="nome" class="control-label">Nome</label>
+      <input type="text" class="form-control" formControlName="nome"
+      id="nome" placeholder="Nome">
+      <app-erro-msg [control]="$any(formulario).get('nome')" label="Nome"></app-erro-msg>    </div>
+  </div>
+
+  <div class="form-row" [ngClass]="aplicaCssErro('profissionais')">
+    <div class="col-sm-12">
+      <label for="profissionais">Profissionais</label>
+      <input type="text" class="form-control" id="profissionais" placeholder="profissionais"
+      formControlName="profissionais">
+      <app-erro-msg [control]="$any(formulario).get('profissionais')" label="Profissionais"></app-erro-msg>
+    </div>
+  </div>
+
+  <div class="form-row" [ngClass]="aplicaCssErro('agendamentos')">
+    <div class="col-sm-12">
+      <label for="agendamentos">Agendamentos</label>
+      <input type="text" class="form-control" id="agendamentos"
+      formControlName="agendamentos">
+      <app-erro-msg [control]="$any(formulario).get('agendamentos')" label="Agendamentos"></app-erro-msg>
+    </div>
+  </div>
+
+  <button type="submit" class="btn btn-primary" (click)="submit()">Salvar</button>
+  <button class="btn btn-default" (click)="onCancel()">Cancelar</button>
+
+</form>
+

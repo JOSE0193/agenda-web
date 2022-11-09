@@ -1,0 +1,29 @@
+.body{
+  box-sizing: content-box;
+  margin-top: 3rem;
+}
+
+.body h1{
+  font-size: 1.3rem;
+  font-family: 'Courier New', Courier, monospace;
+}
+
+.body p{
+  font-size: 1rem;
+  font-family: 'Courier New', Courier, monospace;
+
+}
+
+.body div{
+  margin-left: 12rem
+}
+
+.card{
+  box-sizing: content-box;
+  text-align: center;
+  margin-bottom: 3rem;
+  font-size: 20px;
+  background-color: rgb(224, 110, 133);
+}
+
+

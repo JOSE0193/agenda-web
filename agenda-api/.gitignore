@@ -1,0 +1,14 @@
+# Maven
+target
+
+# Intellij
+.idea
+*.iml
+
+# Eclipse
+.classpath
+.project
+.settings
+
+# Application
+data
