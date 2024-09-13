@@ -1,9 +1,0 @@
-spring:
-  datasource:
-    username: root
-    url: jdbc:mysql://localhost:3306/agenda_api_data?useSSL=false&createDatabaseIfNotExist=true&allowPublicKeyRetrieval=true
-    password: root
-  profile: dev
-  jpa:
-    hibernate:
-      ddl-auto: update

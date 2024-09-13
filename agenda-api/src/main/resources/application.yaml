@@ -1,7 +1,0 @@
-server:
-    error:
-        include-stacktrace: on_param
-
-spring:
-    profiles:
-        active: dev
