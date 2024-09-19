@@ -1,27 +1,53 @@
-# FrontEnd
+# 🖥️ – Agenda Web
+ 
+## Descrição
+A **Agenda Web** é uma aplicação desenvolvida em Angular 17 utilizando Bootstrap para desenvolvimento das telas do sistema de gerenciamento de clientes e os respectivos agendamentos para atendimento em uma clínica de fisioterapia. Essa aplicação oferece funcionalidades como criar, listar, editar e remover clientes e agendamentos facilitando o gerenciamento das operações do estabelecimento.
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 12.0.5.
+![TypeScript](https://img.shields.io/badge/typescript-%23007ACC.svg?style=for-the-badge&logo=typescript&logoColor=white)
+![Angular](https://img.shields.io/badge/angular-%23DD0031.svg?style=for-the-badge&logo=angular&logoColor=white)
+![Bootstrap](https://img.shields.io/badge/bootstrap-%238511FA.svg?style=for-the-badge&logo=bootstrap&logoColor=white)
+![SASS](https://img.shields.io/badge/SASS-hotpink.svg?style=for-the-badge&logo=SASS&logoColor=white)
+![Visual Studio Code](https://img.shields.io/badge/Visual%20Studio%20Code-0078d7.svg?style=for-the-badge&logo=visual-studio-code&logoColor=white)
 
-## Development server
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+## Funcionalidades
 
-## Code scaffolding
+- 🔐 – **Sistema de Autenticação**: Tela de login e de cadastro para somente permitir entrada de usuários cadastrados.
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+- 🛒 **Gerenciamento de agendamentos**: CRUD de cadastro de clientes e dos respectivos agendamentos dos atendimentos prestados com status e informações de clientes e dos procedimentos.
 
-## Build
+- 🔗 **Integração com API **: Integração plataforma front-end web e com api desenvolvida com Spring.
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+- 📱 **Integração com APP **: Integração com aplicação mobile desenvolvida com react native para o monitoramento dos atendimentos.(Previsto)
 
-## Running unit tests
+## Tecnologias Utilizadas
+- **Node.js e NPM**: Ambiente de execução para usar o Anular.
+- **Angular**: Framework web minimalista e flexível para desenvolvimento de componentes.
+- **Bootstrap**: Biblioteca para estilização das telas.
+- **Sass**: Para estilização do css das dos componentes das telas.
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+## Como rodar o projeto
+### Pré-requisitos
+- **Node.js** instalado (v14.x ou superior)
+- **Git** para clonar o repositório
+- **Angular CLI** instalado para rodar o projeto
+- **NPM** para instalar bibliotecas e rodar o projeto.
 
-## Running end-to-end tests
+### Passo a passo
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+1. **Clone o repositório**:
+    ```bash
+    git clone https://github.com/JOSE0193/agenda-web
+    cd -web
+    ```
 
-## Further help
+2. **Instale as dependências**:
+    ```bash
+    npm install
+    ```
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+4. **Inicie o servidor**:
+   ```bash
+        npm run start
+        # or
+        ng serve
