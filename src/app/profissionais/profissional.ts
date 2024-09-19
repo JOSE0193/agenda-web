@@ -1,5 +1,5 @@
 import { Agendamento } from './../agendamentos/agendamento';
-import { Servico } from "../servico/servico";
+import { Servico } from "../services/servico";
 
 export interface Profissional {
   id: number;

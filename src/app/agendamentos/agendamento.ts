@@ -1,6 +1,6 @@
 import { Profissional } from './../profissionais/profissional';
 import { Cliente } from "../clientes/cliente";
-import { Servico } from "../servico/servico";
+import { Servico } from "../services/servico";
 
 export class Agendamento {
   id!: number;

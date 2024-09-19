@@ -44,7 +44,7 @@ const routes: Routes = [
       },
       {
         path: 'servicos',
-        loadChildren: () => import('./servico/servico.module').then(m => m.ServicoModule),
+        loadChildren: () => import('./services/servico.module').then(m => m.ServicoModule),
         canActivate: [AuthGuard]
       }
     ]

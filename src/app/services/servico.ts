@@ -1,5 +1,5 @@
-import { Agendamento } from './../agendamentos/agendamento';
-import { Profissional } from './../profissionais/profissional';
+import { Agendamento } from '../agendamentos/agendamento';
+import { Profissional } from '../profissionais/profissional';
 
 export interface Servico {
   id: number;
