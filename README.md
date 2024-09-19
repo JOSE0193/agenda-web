@@ -9,6 +9,9 @@ A **Agenda Web** é uma aplicação desenvolvida em Angular 17 utilizando Bootst
 ![SASS](https://img.shields.io/badge/SASS-hotpink.svg?style=for-the-badge&logo=SASS&logoColor=white)
 ![Visual Studio Code](https://img.shields.io/badge/Visual%20Studio%20Code-0078d7.svg?style=for-the-badge&logo=visual-studio-code&logoColor=white)
 
+<p align="center">
+    <img src="src/assets/img/tela-inicial-agenda.png" alt="Imagem tela inicial" width="400px">
+</p>
 
 ## Funcionalidades
 
